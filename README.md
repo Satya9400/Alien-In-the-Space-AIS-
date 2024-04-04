@@ -1,6 +1,10 @@
 # Alien-In-the-Space-AIS-
 This is beginning of my coding and learning programing languages.
-This is a video game in which I have used HTML and CSS.
+Today’s generation is totally attracted to multiplayer games and e-sports.
+So, from there I decided to create offline video game. In this game I used HTML and some basics of CSS. 
+
+In this game you have to kill aliens using mouse (right click). Aliens will move in your system’s screen, you have to adjust your cursor towards the alien and kill using right click. After finish one game you can restart and can play another and another game, how much you want.
+
 I have also used some images like Alien, background. <label for="alienInput1" class="alien alien1">
                                                       <img src="alien.png">
 Images are also attached in this repository.
