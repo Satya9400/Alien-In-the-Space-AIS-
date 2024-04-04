@@ -24,4 +24,4 @@ To make movement of the aliens i have used @keyframes move{
 100%{
     top:30%; right:20%; 
     }
-    and i have also add animation delays.
+    and i also added the animation delays.
