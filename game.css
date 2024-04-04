@@ -1,0 +1,124 @@
+body{
+    counter-reset: aliens;
+    background-color: grey;
+    background-size: 100%;
+    font-family: monospace;
+    color: purple;
+    text-align: center;
+    overflow: hidden;
+}
+
+#title {
+    text-align: center;
+    margin: auto;   
+}
+
+#home {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    font-size 18px;
+}
+
+#restart {
+    position: fixed;
+    left: 20px;
+    bottom: 0;
+    font-size 18px;
+}
+
+a:hover {
+    color: lawngreen;
+}
+
+#playArea {
+    position: relative;
+    cursor: crosshair;
+    height: 700px;
+    width: 1500px;
+    margin: auto;
+    background-image: url(background.jpeg);
+}
+
+.input[type="radio"]:checked {
+    counter-increment:aliens;
+}
+
+.input {
+    position: fixed;
+    left: 0;
+    opacity: 0;
+}
+
+.alien { 
+    transition: 0.5s;
+    animation: move 10s infinite alternate;
+}
+
+.input1:not(:checked) ~ .alien1,
+.input2:not(:checked) ~ .alien2,
+.input3:not(:checked) ~ .alien3,
+.input4:not(:checked) ~ .alien4,
+.input5:not(:checked) ~ .alien5 {
+  opacity: 1; 
+}
+
+.input1:checked ~ .alien1,
+.input2:checked ~ .alien2,
+.input3:checked ~ .alien3,
+.input4:checked ~ .alien4,
+.input5:checked ~ .alien5 {
+  opacity: 0;
+}
+
+.alien {
+    position: absolute;
+    left: 0;
+    cursor: crosshair;
+}
+
+.alien1 {
+    top: 50px;
+    animation-delay: -5s;
+}
+
+.alien2 {
+    top: 100px;
+    animation-delay: -8s;
+}
+
+.alien3 {
+    top: 150px;
+    animation-delay: -10s;
+}
+
+.alien4 {
+    top: 200px;
+    animation-delay: -13s;
+}
+
+.alien5 {
+    top: 250px;
+    animation-delay: -9s;
+}
+
+@keyframes move{
+0%{
+    left:0%;
+    }
+20%{
+    left:20%;top:50%; 
+    }
+40%{
+    top:30%; left:90%;
+    }
+60%{
+    top:80%; right:80%;
+    }
+80%{
+    top:10%; left:20%:
+    }
+100%{
+    top:30%; right:20%; 
+    }
+}
