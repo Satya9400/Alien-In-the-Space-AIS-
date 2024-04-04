@@ -5,7 +5,7 @@ So, from there I decided to create offline video game. In this game I used HTML 
 
 In this game you have to kill aliens using mouse (right click). Aliens will move in your system’s screen, you have to adjust your cursor towards the alien and kill using right click. After finish one game you can restart and can play another and another game, how much you want.
 
-I have also used some images like Alien, background. <label for="alienInput1" class="alien alien1">
+I have used some images like Alien, background. <label for="alienInput1" class="alien alien1">
                                                       <img src="alien.png">
 Images are also attached in this repository.
 To make number of aliens i have used <input class="input input1" id="alienInput1" type="radio"> and incrased the number of inputs to increase the number of aliens.
